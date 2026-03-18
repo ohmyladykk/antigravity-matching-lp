@@ -113,6 +113,7 @@ h1, h2, h3, .logo {
 .gradient-text {
     background: linear-gradient(to right, var(--secondary), var(--primary-light), var(--accent));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% auto;
     animation: shine 5s linear infinite;
