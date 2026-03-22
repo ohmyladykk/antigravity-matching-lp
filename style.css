@@ -532,3 +532,14 @@ section {
     .hero-actions { flex-direction: column; }
     .nav-links { display: none; }
 }
+
+/* 動画スタイル追加 */
+.hero-video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 242, 254, 0.4);
+    border: 1px solid rgba(0, 242, 254, 0.5);
+    display: block;
+    margin: 40px auto;
+}
