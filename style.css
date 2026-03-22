@@ -543,3 +543,33 @@ section {
     display: block;
     margin: 40px auto;
 }
+
+/* =========================================
+   📱 ここから下は「スマホ（画面幅768px以下）」の時だけ発動する魔法！
+   ========================================= */
+@media screen and (max-width: 768px) {
+    /* 1. 横並びの要素を「縦並び」にして見やすくする */
+    .features-container, .flex-container, section {
+        flex-direction: column !important;
+        padding: 15px !important;
+    }
+    
+    /* 2. 動画や画像が画面の外にはみ出さないように強制ストップ */
+    video, img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* 3. ボタンをスマホの指で押しやすいように横幅いっぱいに広げる */
+    a[href*="note.com"] {
+        display: block !important;
+        width: 90% !important;
+        margin: 20px auto !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* 4. タイトルの文字サイズをスマホに合わせて調整 */
+    h1 { font-size: 1.8em !important; }
+    h2 { font-size: 1.5em !important; }
+}
